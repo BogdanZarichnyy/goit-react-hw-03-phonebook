@@ -50,6 +50,8 @@ export class App extends Component {
         }
 
         this.setState(previousState => ({ contacts: [...previousState.contacts, { id, name, number }] }));
+
+        event.target.reset();
     }
 
     handleFindName = (event) => {
